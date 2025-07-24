@@ -1,0 +1,12 @@
+.md-typeset .admonition.note, .md-typeset details.note{
+    border: 0.025rem solid #e4ece8;
+}
+.md-typeset .note>.admonition-title, .md-typeset .note>summary{
+    background-color: #95e0c6;/*note的标题栏*/
+}
+.md-typeset .admonition.info, .md-typeset details.info{
+    border: 0.025rem solid #e4ece8;
+}
+.md-typeset .info>.admonition-title, .md-typeset .info>summary{
+    background-color: blue gray;/*info的标题栏*/
+}
