@@ -1,0 +1,12 @@
+site_name: FallenWind's Blog
+theme:
+  name: material
+  palette:
+    - dark
+    - default
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.sections.scroll
+    - navigation.sections.title
