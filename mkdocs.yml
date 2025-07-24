@@ -1,12 +1,115 @@
-site_name: FallenWind's Blog
+site_name: FallenWind's Notebook
+site_author: FallenWind
+site_url: 'https://fallenwind2531.github.io/MyBlog/'
+
+repo_name: 'FallenWind2531/MyBlog'
+repo_url: 'https://github.com/FallenWind2531/MyBlog'
+edit_uri: blob/main/MyBlog
+
 theme:
   name: material
+
+  language: zh
+
+  custom_dir: overrides
+
+  icon:
+    logo: material/github
+
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+
   palette:
-    - dark
-    - default
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.indexes
     - navigation.sections.scroll
     - navigation.sections.title
+    - search.highlight
+
+  font:
+    text: LXGW WenKai Screen GB Screen
+    code: JetBrains Mono
+
+markdown_extensions:
+  - toc:
+      permalink: true # link for each title
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}} # enable Unicode link
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      # smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  # - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - tags
+  - statistics:
+      words_per_minute: 200
+
+extra_css:
+  - _css/extra.css
+
+copyright: Copyright © 2025 FallenWind
+
+nav:
+  - "🛖 首页":
+    - "🛖 首页": index.md
+    - "💬 交流": link.md

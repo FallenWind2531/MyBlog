@@ -1,17 +1,24 @@
-# Welcome to MkDocs
+---
+comments: false
+statistics: True
+hide:
+  - feedback
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# **欢迎！**
 
-## Commands
+!!! note "" 
+    <br><br>
+    <div align="center" style="font-size:29px;font-weight:bold">
+        『それが虚無ならば虚無自身がこのとほりで<br>
+        ある程度まではみんなに共通いたします』
+    </div>
+    <div align="center" style="font-size:15px">
+        如是一切是我中的众生，故也是众生各自中的一切。  ——“春天与阿修罗”序
+    </div>
+    <br><br>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+!!! info "站点统计"
+    <center>
+    本站目前共 {{pages}} 页，累计 {{words}} 字！
+    </center>
